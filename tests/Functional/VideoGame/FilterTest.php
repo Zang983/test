@@ -56,39 +56,39 @@ final class FilterTest extends FunctionalTestCase
                 'Affiche 10 jeux vidéo de 1 à 10 sur les 500 jeux vidéo',
                 ['Jeu vidéo 0', 'Jeu vidéo 1', 'Jeu vidéo 2', 'Jeu vidéo 3', 'Jeu vidéo 4', 'Jeu vidéo 5', 'Jeu vidéo 6', 'Jeu vidéo 7', 'Jeu vidéo 8', 'Jeu vidéo 9']
             ],
-//            'page 2 without tags ' => [
-//                $this->createQueryParams(2, []),
-//                'Affiche 10 jeux vidéo de 11 à 20 sur les 50 jeux vidéo',
-//                ['Jeu vidéo 10', 'Jeu vidéo 11', 'Jeu vidéo 12', 'Jeu vidéo 13', 'Jeu vidéo 14', 'Jeu vidéo 15', 'Jeu vidéo 16', 'Jeu vidéo 17', 'Jeu vidéo 18', 'Jeu vidéo 19']
-//            ],
-//            'with one tag' => [
-//                $this->createQueryParams(1, [
-//                    'tags' => [1]
-//                ]),
-//                'Affiche 10 jeux vidéo de 1 à 10 sur les 25 jeux vidéo',
-//                ['Jeu vidéo 0', 'Jeu vidéo 6', 'Jeu vidéo 7', 'Jeu vidéo 8', 'Jeu vidéo 9', 'Jeu vidéo 10', 'Jeu vidéo 16', 'Jeu vidéo 17', 'Jeu vidéo 18', 'Jeu vidéo 19']
-//            ],
-//            'with many tags' => [
-//                $this->createQueryParams(1, [
-//                    'tags' => [1, 2, 3]
-//                ]),
-//                'Affiche 10 jeux vidéo de 1 à 10 sur les 15 jeux vidéo',
-//                ['Jeu vidéo 0', 'Jeu vidéo 8', 'Jeu vidéo 9', 'Jeu vidéo 10', 'Jeu vidéo 18', 'Jeu vidéo 19', 'Jeu vidéo 20', 'Jeu vidéo 28', 'Jeu vidéo 29', 'Jeu vidéo 30']
-//            ],
-//            'with too much tags' => [
-//                $this->createQueryParams(1, [
-//                    'tags' => [1, 3, 7]
-//                ]),
-//                'Affiche 0 jeux vidéo de 1 à 0 sur les 0 jeux vidéo',
-//                [],
-//            ],
-//            'with missing tags' => [
-//                $this->createQueryParams(1, [
-//                    'tags' => [-1]
-//                ]),
-//                'Affiche 10 jeux vidéo de 1 à 10 sur les 50 jeux vidéo',
-//                ['Jeu vidéo 0', 'Jeu vidéo 1', 'Jeu vidéo 2', 'Jeu vidéo 3', 'Jeu vidéo 4', 'Jeu vidéo 5', 'Jeu vidéo 6', 'Jeu vidéo 7', 'Jeu vidéo 8', 'Jeu vidéo 9']
-//            ],
+            'page 2 without tags ' => [
+                $this->createQueryParams(2, []),
+                'Affiche 10 jeux vidéo de 11 à 20 sur les 50 jeux vidéo',
+                ['Jeu vidéo 10', 'Jeu vidéo 11', 'Jeu vidéo 12', 'Jeu vidéo 13', 'Jeu vidéo 14', 'Jeu vidéo 15', 'Jeu vidéo 16', 'Jeu vidéo 17', 'Jeu vidéo 18', 'Jeu vidéo 19']
+            ],
+            'with one tag' => [
+                $this->createQueryParams(1, [
+                    'tags' => [1]
+                ]),
+                'Affiche 10 jeux vidéo de 1 à 10 sur les 250 jeux vidéo',
+                ['Jeu vidéo 0', 'Jeu vidéo 6', 'Jeu vidéo 7', 'Jeu vidéo 8', 'Jeu vidéo 9', 'Jeu vidéo 10', 'Jeu vidéo 16', 'Jeu vidéo 17', 'Jeu vidéo 18', 'Jeu vidéo 19']
+            ],
+            'with many tags' => [
+                $this->createQueryParams(1, [
+                    'tags' => [1, 2, 3]
+                ]),
+                'Affiche 10 jeux vidéo de 1 à 10 sur les 150 jeux vidéo',
+                ['Jeu vidéo 0', 'Jeu vidéo 8', 'Jeu vidéo 9', 'Jeu vidéo 10', 'Jeu vidéo 18', 'Jeu vidéo 19', 'Jeu vidéo 20', 'Jeu vidéo 28', 'Jeu vidéo 29', 'Jeu vidéo 30']
+            ],
+            'with too much tags' => [
+                $this->createQueryParams(1, [
+                    'tags' => [1, 3, 7]
+                ]),
+                'Affiche 0 jeux vidéo de 1 à 0 sur les 0 jeux vidéo',
+                [],
+            ],
+            'with missing tags' => [
+                $this->createQueryParams(1, [
+                    'tags' => [-1]
+                ]),
+                'Affiche 10 jeux vidéo de 1 à 10 sur les 500 jeux vidéo',
+                ['Jeu vidéo 0', 'Jeu vidéo 1', 'Jeu vidéo 2', 'Jeu vidéo 3', 'Jeu vidéo 4', 'Jeu vidéo 5', 'Jeu vidéo 6', 'Jeu vidéo 7', 'Jeu vidéo 8', 'Jeu vidéo 9']
+            ],
         ];
     }
 
