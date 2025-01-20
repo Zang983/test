@@ -2,6 +2,7 @@
 
 namespace App\Doctrine\DataFixtures;
 
+use App\Model\Entity\Review;
 use App\Model\Entity\Tag;
 use App\Model\Entity\User;
 use App\Model\Entity\VideoGame;
