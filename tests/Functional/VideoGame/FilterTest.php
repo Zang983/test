@@ -58,7 +58,7 @@ final class FilterTest extends FunctionalTestCase
             ],
             'page 2 without tags ' => [
                 $this->createQueryParams(2, []),
-                'Affiche 10 jeux vidéo de 11 à 20 sur les 50 jeux vidéo',
+                'Affiche 10 jeux vidéo de 11 à 20 sur les 500 jeux vidéo',
                 ['Jeu vidéo 10', 'Jeu vidéo 11', 'Jeu vidéo 12', 'Jeu vidéo 13', 'Jeu vidéo 14', 'Jeu vidéo 15', 'Jeu vidéo 16', 'Jeu vidéo 17', 'Jeu vidéo 18', 'Jeu vidéo 19']
             ],
             'with one tag' => [
