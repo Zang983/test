@@ -25,7 +25,7 @@ final class FilterTest extends FunctionalTestCase
         self::assertSelectorCount(10, 'article.game-card');
         $this->client->submitForm('Filtrer', ['filter[search]' => 'Jeu vidéo 49'], 'GET');
         self::assertResponseIsSuccessful();
-        self::assertSelectorCount(1, 'article.game-card');
+        self::assertSelectorCount(10git, 'article.game-card');
     }
 
     /* Fin du code déjà présent */
