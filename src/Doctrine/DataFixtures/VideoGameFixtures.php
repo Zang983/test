@@ -30,7 +30,7 @@ final class VideoGameFixtures extends Fixture implements DependentFixtureInterfa
         $tags = $manager->getRepository(Tag::class)->findAll();
         $users = $manager->getRepository(User::class)->findAll();
 
-        $videoGames = array_fill_callback(0, 50, fn (int $index): VideoGame => (new VideoGame)
+        $videoGames = array_fill_callback(0, 500, fn (int $index): VideoGame => (new VideoGame)
             ->setTitle(sprintf('Jeu vidéo %d', $index))
             ->setDescription($this->faker->paragraphs(10, true))
             ->setReleaseDate(new DateTimeImmutable())
